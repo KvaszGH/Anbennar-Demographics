@@ -1,0 +1,146 @@
+namespace = population
+
+country_event = {
+	id = population.0
+	title = population.0.t
+	desc = population.0.d
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		always = yes
+	}
+
+	option = {	
+		name = population.0.a
+		
+		hidden_effect = {
+			set_variable = { totalPop = 0 }
+			set_variable = { elvenPop = 0 }
+			set_variable = { halflingPop = 0 }
+			set_variable = { dwarvenPop = 0 }
+			set_variable = { gnomishPop = 0 }
+			set_variable = { orcishPop = 0 }
+			set_variable = { koboldPop = 0 }
+			set_variable = { half_orcishPop = 0 }
+			set_variable = { humanPop = 0 }
+			set_variable = { gnollishPop = 0 }
+			set_variable = { ruinbornPop = 0 }
+			set_variable = { goblinPop = 0 }
+			set_variable = { harpyPop = 0 }
+			set_variable = { trollPop = 0 }
+			set_variable = { half_elvenPop = 0 }
+			set_variable = { harimariPop = 0 }
+			set_variable = { centaurPop = 0 }
+			set_variable = { hobgoblinPop = 0 }
+			set_variable = { ogrePop = 0 }
+			set_variable = { lizardfolkPop = 0 }
+			#set_variable = { mechanimPop = 0 }
+			every_owned_province = {
+				random_list = {
+					1 = { set_province_flag = pop_1 }
+					1 = { set_province_flag = pop_2 }
+					1 = { set_province_flag = pop_3 }
+					1 = { set_province_flag = pop_4 }
+					1 = { set_province_flag = pop_5 }
+					1 = { set_province_flag = pop_6 }
+					1 = { set_province_flag = pop_7 }
+					1 = { set_province_flag = pop_8 }
+					1 = { set_province_flag = pop_9 }
+					1 = { set_province_flag = pop_10 }
+				}
+			}
+			every_owned_province = {
+				limit = { has_province_flag = pop_1 }
+				calculate_logic = yes
+			}
+			every_owned_province = {
+				limit = { has_province_flag = pop_2 }
+				calculate_logic = yes
+			}
+			every_owned_province = {
+				limit = { has_province_flag = pop_3 }
+				calculate_logic = yes
+			}
+			every_owned_province = {
+				limit = { has_province_flag = pop_4 }
+				calculate_logic = yes
+			}
+			every_owned_province = {
+				limit = { has_province_flag = pop_5 }
+				calculate_logic = yes
+			}
+			every_owned_province = {
+				limit = { has_province_flag = pop_6 }
+				calculate_logic = yes
+			}
+			every_owned_province = {
+				limit = { has_province_flag = pop_7 }
+				calculate_logic = yes
+			}
+			every_owned_province = {
+				limit = { has_province_flag = pop_8 }
+				calculate_logic = yes
+			}
+			every_owned_province = {
+				limit = { has_province_flag = pop_9 }
+				calculate_logic = yes
+			}
+			every_owned_province = {
+				limit = { has_province_flag = pop_10 }
+				calculate_logic = yes
+			}
+			set_variable = { totalPop = 0 }
+			#Adjustement
+			multiply_variable = { elvenPop = 0.45 }
+			multiply_variable = { halflingPop = 1.3 }
+			multiply_variable = { dwarvenPop = 0.8 }
+			multiply_variable = { gnomishPop = 0.9 }
+			multiply_variable = { orcishPop = 0.8 }
+			multiply_variable = { koboldPop = 2 }
+			multiply_variable = { half_orcishPop = 0.9 }
+			multiply_variable = { humanPop = 1 }
+			multiply_variable = { gnollishPop = }
+			multiply_variable = { ruinbornPop = 0.95 }
+			multiply_variable = { goblinPop = 1.2 }
+			multiply_variable = { harpyPop = 1 }
+			multiply_variable = { trollPop = 0.2 }
+			multiply_variable = { half_elvenPop = 0.3 }
+			multiply_variable = { harimariPop = 1 }
+			multiply_variable = { centaurPop = 1 }
+			multiply_variable = { hobgoblinPop = 1 }
+			multiply_variable = { ogrePop = 0.3 }
+			multiply_variable = { lizardfolkPop = 1}
+			#multiply_variable = { mechanimPop = 0.4 }
+			
+			
+			#Add back to total
+			change_variable = { which = totalPop which = elvenPop }
+			change_variable = { which = totalPop which = halflingPop }
+			change_variable = { which = totalPop which = dwarvenPop }
+			change_variable = { which = totalPop which = gnomishPop }
+			change_variable = { which = totalPop which = orcishPop }
+			change_variable = { which = totalPop which = koboldPop }
+			change_variable = { which = totalPop which = half_orcishPop }
+			change_variable = { which = totalPop which = humanPop }
+			change_variable = { which = totalPop which = gnollishPop }
+			change_variable = { which = totalPop which = ruinbornPop }
+			change_variable = { which = totalPop which = goblinPop }
+			change_variable = { which = totalPop which = harpyPop }
+			change_variable = { which = totalPop which = trollPop }
+			change_variable = { which = totalPop which = half_elvenPop }
+			change_variable = { which = totalPop which = harimariPop }
+			change_variable = { which = totalPop which = centaurPop }
+			change_variable = { which = totalPop which = hobgoblinPop }
+			change_variable = { which = totalPop which = ogrePop }
+			change_variable = { which = totalPop which = lizardfolkPop }
+			#change_variable = { which = totalPop which = mechanimPop }
+		}
+	}
+	
+	#Go Back
+	option = {
+		name = population.0.c
+	}
+}

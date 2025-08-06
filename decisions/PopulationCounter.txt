@@ -1,0 +1,24 @@
+country_decisions = {
+	population_counter_decision = {
+		major = yes
+        color = { 235 102 255 }
+		potential = {
+			ai = no
+		}
+		
+		provinces_to_highlight = {
+		}
+		
+		allow = {
+			always = yes
+		}
+		
+		effect = {
+			country_event = { id = population.0 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
