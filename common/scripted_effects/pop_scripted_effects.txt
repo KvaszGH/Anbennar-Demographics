@@ -484,8 +484,8 @@ calculate_prov_total_pop = {
 	subtract_variable = { totalPop = 2.5 } #quick fix
 	trigger_switch = {
 		on_trigger = has_terrain
-		dwarven_hold = { multiply_variable = { totalPop = 4 } }
-		dwarven_hold_surface = { multiply_variable = { totalPop = 4 } }
+		dwarven_hold = { multiply_variable = { totalPop = 6 } }
+		dwarven_hold_surface = { multiply_variable = { totalPop = 6 } }
 		city_terrain = { multiply_variable = { totalPop = 2 } }
 		farmlands = { multiply_variable = { totalPop = 1.2 } }
 		# grasslands = { multiply_variable = { totalPop = 1 } }
