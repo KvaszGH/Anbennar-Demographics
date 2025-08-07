@@ -484,8 +484,8 @@ calculate_prov_total_pop = {
 	subtract_variable = { totalPop = 2.5 } #quick fix
 	trigger_switch = {
 		on_trigger = has_terrain
-		dwarven_hold = { multiply_variable = { totalPop = 1.4 } }
-		dwarven_hold_surface = { multiply_variable = { totalPop = 1.4 } }
+		dwarven_hold = { multiply_variable = { totalPop = 4 } }
+		dwarven_hold_surface = { multiply_variable = { totalPop = 4 } }
 		city_terrain = { multiply_variable = { totalPop = 2 } }
 		farmlands = { multiply_variable = { totalPop = 1.2 } }
 		# grasslands = { multiply_variable = { totalPop = 1 } }
@@ -493,18 +493,18 @@ calculate_prov_total_pop = {
 		forest = { multiply_variable = { totalPop = 0.95 } }
 		woods = { multiply_variable = { totalPop = 0.95 } }
 		drylands = { multiply_variable = { totalPop = 0.9 } }
-		savannah = { multiply_variable = { totalPop = 0.9 } }
-		ancient_forest = { multiply_variable = { totalPop = 0.9 } }
-		hills = { multiply_variable = { totalPop = 0.9 } }
-		dwarven_road = { multiply_variable = { totalPop = 0.7 } }
+		savannah = { multiply_variable = { totalPop = 0.8 } }
+		ancient_forest = { multiply_variable = { totalPop = 0.8 } }
+		hills = { multiply_variable = { totalPop = 0.8 } }
+		dwarven_road = { multiply_variable = { totalPop = 0.5 } }
 		jungle = { multiply_variable = { totalPop = 0.8 } }
-		marsh = { multiply_variable = { totalPop = 0.7 } }
-		coastal_desert = { multiply_variable = { totalPop = 0.7 } }
+		marsh = { multiply_variable = { totalPop = 0.6 } }
+		coastal_desert = { multiply_variable = { totalPop = 0.6 } }
 		coastline = { multiply_variable = { totalPop = 0.7 } }
-		mountain = { multiply_variable = { totalPop = 0.5 } }
-		cavern = { multiply_variable = { totalPop = 0.3 } }
-		desert = { multiply_variable = { totalPop = 0.3 } }
-		glacier = { multiply_variable = { totalPop = 0.3 } }
+		mountain = { multiply_variable = { totalPop = 0.4 } }
+		cavern = { multiply_variable = { totalPop = 0.2 } }
+		desert = { multiply_variable = { totalPop = 0.2 } }
+		glacier = { multiply_variable = { totalPop = 0.2 } }
 		gladeway = { multiply_variable = { totalPop = 0.1 } }
 	}
 	if = {
