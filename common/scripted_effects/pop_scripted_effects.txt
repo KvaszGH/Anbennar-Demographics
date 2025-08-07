@@ -547,14 +547,15 @@ calculate_prov_total_pop = {
 		limit = { devastation = 90 }
 		multiply_variable = { totalPop = 0.75 }
 	}
-	trigger_switch = {
-		on_trigger = current_age
-		
-		age_of_discovery = { multiply_variable = { totalPop = 0.8 } }
-		age_of_reformation = { multiply_variable = { totalPop = 1 } }
-		age_of_absolutism = { multiply_variable = { totalPop = 1.2 } }
-		age_of_revolutions = { multiply_variable = { totalPop = 1.4 } }
-	}
+	# This should be taken care of by the natural growth of development
+	#trigger_switch = {
+	#	on_trigger = current_age
+	#	
+	#	age_of_discovery = { multiply_variable = { totalPop = 0.8 } }
+	#	age_of_reformation = { multiply_variable = { totalPop = 1 } }
+	#	age_of_absolutism = { multiply_variable = { totalPop = 1.2 } }
+	#	age_of_revolutions = { multiply_variable = { totalPop = 1.4 } }
+	#}
 }
 
 calculate_prov_minorities_pop = {
