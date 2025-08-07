@@ -98,20 +98,20 @@ country_event = {
 			multiply_variable = { dwarvenPop = 0.8 }
 			multiply_variable = { gnomishPop = 0.9 }
 			multiply_variable = { orcishPop = 0.8 }
-			multiply_variable = { koboldPop = 2 }
+			multiply_variable = { koboldPop = 1.5 }
 			multiply_variable = { half_orcishPop = 0.9 }
 			multiply_variable = { humanPop = 1 }
-			multiply_variable = { gnollishPop = }
+			multiply_variable = { gnollishPop = 0.75 }
 			multiply_variable = { ruinbornPop = 0.95 }
 			multiply_variable = { goblinPop = 1.2 }
-			multiply_variable = { harpyPop = 1 }
+			multiply_variable = { harpyPop = 0.7 }
 			multiply_variable = { trollPop = 0.2 }
 			multiply_variable = { half_elvenPop = 0.3 }
 			multiply_variable = { harimariPop = 1 }
-			multiply_variable = { centaurPop = 1 }
-			multiply_variable = { hobgoblinPop = 1 }
+			multiply_variable = { centaurPop = 0.6 }
+			multiply_variable = { hobgoblinPop = 0.4 }
 			multiply_variable = { ogrePop = 0.3 }
-			multiply_variable = { lizardfolkPop = 1}
+			multiply_variable = { lizardfolkPop = 0.9 }
 			#multiply_variable = { mechanimPop = 0.4 }
 			
 			
